@@ -33,6 +33,11 @@ public class WebCalci {
 		return a/b;
 	}
 	
+	@GetMapping("addition/{a}/{b}")
+	int addition(@PathVariable("a") int a, @PathVariable("b") int b)
+	{
+		return a+b;
+	}
 	
 	
 	
